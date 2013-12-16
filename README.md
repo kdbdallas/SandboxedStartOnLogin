@@ -13,7 +13,11 @@ I will come back and update when I can.
 
 Basically open your main project in Xcode then open this project in Xcode and grab the project icon/title (top item in the left column) and drag it write below the same one of your main project.
 
-Also make sure you add the app this creates as a target dependency of your main project.
+Make sure you add the app this creates as a target dependency of your main project.
+
+Then create a new 'Copy Files' Build Phase. For the Destination choose ''Wrapper' and the subpath 'Contents/Library/LoginItems'
+Leave the 'Copy only...' unchecked and add the launcher app as the 'file' for the 'Copy File' you just added.
+
 
 Here is a link to a similar project (that inspired me).
 
